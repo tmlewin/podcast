@@ -1,0 +1,14 @@
+Get = if we are using third party api, that is getting data from host
+post = if we want to store data in a databse
+delete = wants to delete an item
+put = updating user info
+Update =  updating user info
+
+https://st1.zoom.us/web_client/wm8kef/html/externalLinkPage.html?ref=https://developer.spotify.com/console/get-several-shows/
+https://via.placeholder.com/150
+
+C/O https://placeholder.com/
+
+2nIvarXvvZcp1cePx69x9N%2C5lY4b5PGOvMuOYOjOVEcb9%2C6xpiit8aJmwDHk1rKdxmri
+
+https://st1.zoom.us/web_client/wm8kef/html/externalLinkPage.html?ref=https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio

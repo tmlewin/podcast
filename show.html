@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container" style="padding:0px">
+        <div class="sidebar">
+            <a href="/index.html" ><img width="80" src="./assets/logo.svg"  alt=""></a>
+            <ul>
+                <li><a href="/dashboard.html">Home</a></li>
+                <li><a href="">Browse</a></li>
+                <li>Library</li>
+                
+            </ul>
+
+        </div>
+        <div class="show_main">
+            <div class="detail_header" id ="header"></div>
+            
+            
+            <div class="episodes">
+                <h2>Episodes</h2>
+                <div id="episodes">
+
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="./js/index.js"></script>
+    <script>
+        let id=location.search.replace('?id=','');
+        get_show(id);
+        get_episodes(id);
+
+    </script>
+
+    </script>
+    
+</body>
+</html>

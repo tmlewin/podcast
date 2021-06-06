@@ -3,6 +3,7 @@
 *{
     margin:0;
     font-family: 'Chivo', sans-serif;
+    box-sizing: border-box;
 }
 h1{
     font-weight:100;
@@ -121,4 +122,224 @@ h1 span{
     position: absolute;
     right: -5px;
     bottom: 60px;
+}
+
+/* sidebar */
+
+.sidebar{
+    height:100vh;
+    background-color:black;
+    padding:30px 10px;
+    color:white;
+    font-size:larger;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+.sidebar ul li{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover{
+    color:grey;
+}
+/* dashboard */
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.dashboard_main{
+    
+    height: 100%;
+    flex: 1;
+    color:white;
+    padding:35px;
+
+}
+
+button{
+    border: 1px solid white;
+    background-color:transparent;
+    color:white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-transform:uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+button:hover{
+    color:#2c3348;
+    background-color:#54e6af;
+}
+.featured_container{
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+
+}
+.featured{
+    display: flex;
+    align-items: center;
+    background-color:rgba(138, 143, 192, 0.23);
+    border-radius:20px;
+    height: 300px;
+   
+
+    
+}
+.featured div{
+    width: 100%;
+    padding: 30px;
+    line-height: 2;
+    font-size: 1.1em;
+}
+
+.featured div h4{
+    opacity: 0.6;
+}
+
+.featured img{
+    border-radius: 20px;
+}
+/* latest */
+.latest h2{
+    font-size: 2.2em;
+
+}
+/* shows */
+#shows{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:20px;
+}
+
+.show{
+    background:rgba(138, 143, 192, 0.23);
+    margin-right: 20px;
+    border-radius: 10px;
+    padding:10px;
+    line-height: 2;
+    cursor:pointer;
+    transition:background-color .4s ease;
+}
+.show:hover{
+    color:#2c3348;
+    background-color:#8054e6;
+}
+    
+
+.show h5{
+    opacity: 0.6;
+}
+
+.show img{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+/* show_detail page */
+
+.show_main{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.detail_header{
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(180deg, rgba(36,95,187,1) 17%, rgba(98,148,208,0.9500175070028011) 86%);
+    
+
+}
+.detail_header img{
+    width:250px;
+    border-radius: 20px;
+    
+
+
+}
+.detail_header div {
+    color:white;
+    font-size:2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:30px;
+    line-height:1.4;
+
+}
+.detail_header div p{
+    font-size:.5em;
+}
+.audio{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-style: larger;
+    background-color:#2c3348;
+    width:200px;
+    height:70px;
+    padding:10px;
+    border-radius: 35px;
+    justify-content:space-between;
+    transition:box-shadow 0.2s ease-in;
+
+}
+.audio p{
+    flex: 1;
+    text-align: center;
+}
+.play_button{
+    width:45px;
+    overflow:hidden;
+}
+
+
+.episodes{
+    color:white;
+    flex:1;
+    overflow-y: scroll;
+}
+.episodes h2{
+    padding:40px;
+}
+
+.episode{
+    display:flex;
+    align-items:center;
+    margin-bottom: 20px;
+    height:160px;
+    cursor:pointer;
+    padding:40px;
+}
+.episode  img{
+    width: 100px;
+    border-radius:10px;
+    transition:box-shadow 0.2s ease-out;
+}
+.episode:hover{
+    background:#2c3348;
+}
+
+.episode:hover .audio{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+   
+}
+
+.episode:hover .audio,.episode:hover img{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+
+}
+/* Define both min and max width to aliogn the buttons */
+.episode .episode_details{
+    max-width: 500px;
+    min-width:500px;
 }
