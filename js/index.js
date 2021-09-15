@@ -1,4 +1,4 @@
-let bearer_Token ='BQCKa1OCeFJJ2IjbRFTPfeu1_pF44i4IiNG-b23sMiIWI22HuMWSq6nKce2uOcEzYHH11TQR-YeeNYpySbM4-sBsyCtBK03nBgkOOJkobwQ1ApJwwn-CCH7jnA23xtNDi9_maJ8927qSKcl5l7dXVGFYTX9naTXCR1gY7fTZThJWAHcgzRN_J75zZWKdUkKjyIs0eR255p0BE_tq9m09-7cSULn05glDIGTThonPLX-yMzoa3z_esJTXnpO5fXdqjRhmFk3hunuZSKebtZBMax7nw6px1zx2BzuVMKYr'
+let bearer_Token ='BQC8IecbAGpWd_oesvYvy8X06ffenLitz_6XTHzUaboo0Q-hx4yEpDNmp6P9qtwkV69e0VPm8Ys46cThzhp8cshm6Ox7nP_heStcyl7CNHefAsnxf_fJ1OY5qQ--mVAu5iYdePB2XeBeEcTQFTEq1rltW88HLp2uu0z7OGn17vJg90QPLD94DZC9RiH5-s165wQb9_Nsp0ejYdQ5KRxtHXG1dKtljZdr0Hifd94Eom7oeezyqL7KI0kbog-AFrL8DSPrzEGlyDrvjqPMz61lJX9FyJu_jICK39LhbGy3'
 
 let url ='https://api.spotify.com/v1/shows'
 let bearer =  'Bearer ' + bearer_Token
@@ -83,6 +83,7 @@ function get_show(id){
         
         })
         .then((data)=>{
+            document.title = 'Pod-' + data.name
             let header_html = `
             <img src='${data.images[1].url}'/>
             <div>
